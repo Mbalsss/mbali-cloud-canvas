@@ -31,11 +31,10 @@ const Education = () => {
                 <EducationCard
                   institution="Cape Peninsula University of Technology (CPUT)"
                   degree="Diploma in ICT Application Development"
-                  period="2020 - 2023"
+                  period="2022 - 2024"
                   description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems. Coursework included web development, programming principles, database design, and cloud computing fundamentals."
                   achievements={[
-                    "Graduated with distinction",
-                    "Specialized in cloud computing and web technologies",
+                    "Specialized in web technologies",
                     "Developed a cloud-based application for my capstone project",
                     "Received recognition for academic excellence"
                   ]}
