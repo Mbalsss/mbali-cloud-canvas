@@ -21,14 +21,14 @@ const Projects = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ProjectCard 
-              title="Cloud-Based E-commerce Platform"
-              description="Built a scalable e-commerce platform using serverless architecture on AWS. Implemented microservices for product management, user authentication, and order processing."
-              technologies={["AWS Lambda", "API Gateway", "DynamoDB", "S3", "CloudFront", "React"]}
-              image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            />
+             <ProjectCard 
+              title="Capstone Florist Web Application"
+              description="Developed a full-stack florist management system tailored for small businesses."
+              technologies={["Java", "Angular", "Spring Boot", "MySQL"]}
+              image="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Optional: floral-themed Unsplash image
+              githubUrl="https://github.com/Mbalsss/Nursery-Web-Application-Client-Side" 
+              liveUrl="https://example.com" // Replace with your live demo URL (if any)
+             />
             
             <ProjectCard 
               title="Real-Time Analytics Dashboard"
@@ -38,39 +38,7 @@ const Projects = () => {
               githubUrl="https://github.com"
               liveUrl="https://example.com"
             />
-            
-            <ProjectCard 
-              title="Serverless Content Management System"
-              description="Created a serverless CMS that allows content creators to manage digital assets and publish content. Implemented authentication and role-based access control."
-              technologies={["AWS Amplify", "GraphQL", "React", "Cognito", "S3"]}
-              image="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-            />
-            
-            <ProjectCard 
-              title="Cloud Resource Optimizer"
-              description="Built a tool that analyzes cloud resource usage and provides optimization recommendations to reduce costs and improve performance."
-              technologies={["Python", "AWS SDK", "CloudFormation", "Docker", "React"]}
-              image="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-            />
-            
-            <ProjectCard 
-              title="Multi-Cloud Deployment Framework"
-              description="Developed a framework for deploying applications across multiple cloud providers. Includes infrastructure as code templates and CI/CD pipelines."
-              technologies={["Terraform", "AWS", "Azure", "GitHub Actions", "Node.js"]}
-              image="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-            />
-            
-            <ProjectCard 
-              title="Secure File Sharing Application"
-              description="Created a secure file sharing application with end-to-end encryption, access controls, and audit logging. Deployed on AWS with high availability."
-              technologies={["React", "Node.js", "AWS S3", "Lambda", "DynamoDB"]}
-              image="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            />
+           
           </div>
         </div>
       </section>
