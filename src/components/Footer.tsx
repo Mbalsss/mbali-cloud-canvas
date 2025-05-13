@@ -13,13 +13,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Motlalepula Mbali Kgatlhane</h3>
             <p className="text-gray-600 mb-4">Cloud Associate at Capaciti with a passion for full stack development and cloud technologies.</p>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cloud-dark" aria-label="GitHub">
+              <a href="https://github.com/Mbalsss" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cloud-dark" aria-label="GitHub">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cloud-dark" aria-label="LinkedIn">
+              <a href="www.linkedin.com/in/motlalepula-mbali-kgatlhane-67989921b" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cloud-dark" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@example.com" className="text-gray-500 hover:text-cloud-dark" aria-label="Email">
+              <a href="mailto:Mbalikgatlhane34@gmail.com" className="text-gray-500 hover:text-cloud-dark" aria-label="Email">
                 <Mail size={20} />
               </a>
             </div>
@@ -50,7 +50,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Skills</h3>
             <div className="flex flex-wrap gap-2">
               <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">Cloud Computing</span>
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">AWS</span>
               <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">React</span>
               <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
               <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">Full Stack</span>
