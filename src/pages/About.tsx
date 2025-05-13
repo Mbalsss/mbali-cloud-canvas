@@ -37,7 +37,7 @@ const About = () => {
                     <li className="flex items-center gap-3">
                       <span className="font-semibold">Email:</span>
                       <a href="mailto:contact@example.com" className="text-cloud hover:text-cloud-dark">
-                        contact@example.com
+                        Mbalikgatlhane34@gmail.com
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
@@ -46,7 +46,7 @@ const About = () => {
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="font-semibold">Location:</span>
-                      <span>South Africa</span>
+                      <span> Cape Town, South Africa</span>
                     </li>
                   </ul>
                 </div>
@@ -64,8 +64,7 @@ const About = () => {
                   I recently graduated from Cape Peninsula University of Technology (CPUT) with a Diploma in ICT Application Development.
                 </p>
                 <p className="mb-8 text-lg">
-                  My expertise lies in cloud computing, particularly with AWS services, and I have a strong foundation in full stack development. 
-                  I enjoy creating scalable and efficient solutions that leverage the power of cloud technologies.
+                  My expertise lies in cloud computing, and I have a strong foundation in full stack development. 
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
@@ -86,12 +85,12 @@ const About = () => {
                   <SkillCategory 
                     title="Backend Development" 
                     icon={<Server size={20} className="text-cloud" />}
-                    skills={["Node.js", "Express.js", "RESTful APIs", "GraphQL"]} 
+                    skills={["Node.js", "RESTful APIs",]} 
                   />
                   <SkillCategory 
                     title="Database Management" 
                     icon={<Database size={20} className="text-cloud" />}
-                    skills={["SQL", "NoSQL", "MongoDB", "DynamoDB"]} 
+                    skills={["SQL", "MySQL"]} 
                   />
                 </div>
 
