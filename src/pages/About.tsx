@@ -86,7 +86,7 @@ const About = () => {
                   <SkillCategory 
                     title="Database Management" 
                     icon={<Database size={20} className="text-cloud" />}
-                    skills={["MySQL", "SQLite]} 
+                    skills={["MySQL", "SQLite"]} 
                   />
                 </div>
 
