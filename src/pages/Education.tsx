@@ -79,43 +79,6 @@ const Education = () => {
                 />
               </div>
             </div>
-            
-            {/* Continuous Learning */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                <BookOpen size={24} className="text-cloud" />
-                Continuous Learning
-              </h2>
-              
-              <div className="bg-gray-50 rounded-xl p-8">
-                <p className="text-lg mb-6">
-                  I'm committed to continuous learning and staying up-to-date with the latest technologies and best practices 
-                  in cloud computing and software development. Some of my ongoing learning efforts include:
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="font-bold text-xl mb-3">Current Focus Areas</h3>
-                    <ul className="space-y-2">
-                      <LearningItem>Advanced Cloud Architecture Patterns</LearningItem>
-                      <LearningItem>AWS Solutions Architect certification path</LearningItem>
-                      <LearningItem>Serverless Application Development</LearningItem>
-                      <LearningItem>CI/CD and DevOps Practices</LearningItem>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-bold text-xl mb-3">Learning Resources</h3>
-                    <ul className="space-y-2">
-                      <LearningItem>AWS Training and Digital Courses</LearningItem>
-                      <LearningItem>Cloud Practitioner Communities</LearningItem>
-                      <LearningItem>Technical Documentation and Whitepapers</LearningItem>
-                      <LearningItem>Hands-on Labs and Projects</LearningItem>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
