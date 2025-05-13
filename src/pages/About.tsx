@@ -37,7 +37,7 @@ const About = () => {
                     <li className="flex items-center gap-3">
                       <span className="font-semibold">Email:</span>
                       <a href="mailto:contact@example.com" className="text-cloud hover:text-cloud-dark">
-                        contact@example.com
+                        Mbalikgatlhane34@gmail.com
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
@@ -46,7 +46,7 @@ const About = () => {
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="font-semibold">Location:</span>
-                      <span>South Africa</span>
+                      <span>Cape Town, South Africa</span>
                     </li>
                   </ul>
                 </div>
@@ -64,7 +64,7 @@ const About = () => {
                   I recently graduated from Cape Peninsula University of Technology (CPUT) with a Diploma in ICT Application Development.
                 </p>
                 <p className="mb-8 text-lg">
-                  My expertise lies in cloud computing, particularly with AWS services, and I have a strong foundation in full stack development. 
+                  My expertise lies in cloud computing and I have a strong foundation in full stack development. 
                   I enjoy creating scalable and efficient solutions that leverage the power of cloud technologies.
                 </p>
 
@@ -74,11 +74,6 @@ const About = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <SkillCategory 
-                    title="Cloud Technologies" 
-                    icon={<Cloud size={20} className="text-cloud" />}
-                    skills={["AWS", "Azure", "Cloud Architecture", "Serverless Computing"]} 
-                  />
-                  <SkillCategory 
                     title="Frontend Development" 
                     icon={<Code size={20} className="text-cloud" />}
                     skills={["HTML/CSS", "JavaScript", "React", "Tailwind CSS"]} 
@@ -86,12 +81,12 @@ const About = () => {
                   <SkillCategory 
                     title="Backend Development" 
                     icon={<Server size={20} className="text-cloud" />}
-                    skills={["Node.js", "Express.js", "RESTful APIs", "GraphQL"]} 
+                    skills={["Node.js", "RESTful APIs"]} 
                   />
                   <SkillCategory 
                     title="Database Management" 
                     icon={<Database size={20} className="text-cloud" />}
-                    skills={["SQL", "NoSQL", "MongoDB", "DynamoDB"]} 
+                    skills={["MySQL", "SQLite]} 
                   />
                 </div>
 
@@ -99,10 +94,6 @@ const About = () => {
                 <p className="mb-4 text-lg">
                   Outside of my professional life, I'm passionate about continuous learning and staying up-to-date with the latest technologies in cloud computing. 
                   I enjoy participating in tech communities and sharing knowledge with other professionals in the field.
-                </p>
-                <p className="text-lg">
-                  In my free time, I enjoy exploring new technologies through personal projects, reading tech blogs, and contributing to open-source projects 
-                  when possible. I believe in the power of technology to solve real-world problems and create positive impact.
                 </p>
               </div>
             </div>
