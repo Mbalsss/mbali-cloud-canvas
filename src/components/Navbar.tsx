@@ -27,6 +27,7 @@ const Navbar = () => {
               <NavLink to="/" label="Home" />
               <NavLink to="/about" label="About" />
               <NavLink to="/experience" label="Experience" />
+              <NavLink to="/projects" label="Projects" />
               <NavLink to="/education" label="Education" />
               <Button asChild variant="default" className="bg-cloud hover:bg-cloud-dark">
                 <Link to="/contact">Contact Me</Link>
@@ -49,6 +50,7 @@ const Navbar = () => {
           <MobileNavLink to="/" label="Home" onClick={() => setIsOpen(false)} />
           <MobileNavLink to="/about" label="About" onClick={() => setIsOpen(false)} />
           <MobileNavLink to="/experience" label="Experience" onClick={() => setIsOpen(false)} />
+          <MobileNavLink to="/projects" label="Projects" onClick={() => setIsOpen(false)} />
           <MobileNavLink to="/education" label="Education" onClick={() => setIsOpen(false)} />
           <MobileNavLink to="/contact" label="Contact" onClick={() => setIsOpen(false)} />
         </div>

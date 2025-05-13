@@ -11,7 +11,7 @@ const Education = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Education</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
-            My academic background and continuous learning journey
+            My academic background and continuous learning journey in cloud computing and development
           </p>
         </div>
       </section>
@@ -32,11 +32,12 @@ const Education = () => {
                   institution="Cape Peninsula University of Technology (CPUT)"
                   degree="Diploma in ICT Application Development"
                   period="2020 - 2023"
-                  description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems."
+                  description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems. Coursework included web development, programming principles, database design, and cloud computing fundamentals."
                   achievements={[
                     "Graduated with distinction",
                     "Specialized in cloud computing and web technologies",
-                    "Completed a capstone project focusing on cloud-based applications"
+                    "Developed a cloud-based application for my capstone project",
+                    "Received recognition for academic excellence"
                   ]}
                 />
               </div>
@@ -54,28 +55,28 @@ const Education = () => {
                   name="AWS Certified Cloud Practitioner"
                   issuer="Amazon Web Services"
                   date="2023"
-                  description="Foundational certification validating cloud fluency and understanding of AWS Cloud basics."
+                  description="Foundational certification validating cloud fluency and understanding of AWS Cloud basics, services, and security."
                 />
                 
                 <CertificationCard
-                  name="Full Stack Web Development"
-                  issuer="Udemy"
-                  date="2022"
-                  description="Comprehensive certification covering front-end and back-end web development technologies."
+                  name="Microsoft Azure Fundamentals (AZ-900)"
+                  issuer="Microsoft"
+                  date="2023"
+                  description="Certification confirming knowledge of cloud concepts, Azure services, security, privacy, and compliance."
                 />
                 
                 <CertificationCard
                   name="JavaScript Algorithms and Data Structures"
                   issuer="freeCodeCamp"
                   date="2022"
-                  description="Certification in advanced JavaScript concepts, algorithms and data structures."
+                  description="Certification in advanced JavaScript concepts, algorithms and data structures implementations."
                 />
                 
                 <CertificationCard
-                  name="Responsive Web Design"
-                  issuer="freeCodeCamp"
-                  date="2021"
-                  description="Certification in creating responsive web layouts and designs for various screen sizes."
+                  name="Full Stack Web Development"
+                  issuer="Udemy"
+                  date="2022"
+                  description="Comprehensive certification covering front-end and back-end web development technologies including React and Node.js."
                 />
               </div>
             </div>
@@ -98,19 +99,19 @@ const Education = () => {
                     <h3 className="font-bold text-xl mb-3">Current Focus Areas</h3>
                     <ul className="space-y-2">
                       <LearningItem>Advanced Cloud Architecture Patterns</LearningItem>
-                      <LearningItem>Kubernetes and Container Orchestration</LearningItem>
+                      <LearningItem>AWS Solutions Architect certification path</LearningItem>
                       <LearningItem>Serverless Application Development</LearningItem>
-                      <LearningItem>DevOps and CI/CD Pipelines</LearningItem>
+                      <LearningItem>CI/CD and DevOps Practices</LearningItem>
                     </ul>
                   </div>
                   
                   <div>
                     <h3 className="font-bold text-xl mb-3">Learning Resources</h3>
                     <ul className="space-y-2">
-                      <LearningItem>AWS Training and Certification</LearningItem>
-                      <LearningItem>Professional Developer Communities</LearningItem>
-                      <LearningItem>Technical Books and Documentation</LearningItem>
-                      <LearningItem>Online Courses and Webinars</LearningItem>
+                      <LearningItem>AWS Training and Digital Courses</LearningItem>
+                      <LearningItem>Cloud Practitioner Communities</LearningItem>
+                      <LearningItem>Technical Documentation and Whitepapers</LearningItem>
+                      <LearningItem>Hands-on Labs and Projects</LearningItem>
                     </ul>
                   </div>
                 </div>
