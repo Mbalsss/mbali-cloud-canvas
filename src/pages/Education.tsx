@@ -31,14 +31,28 @@ const Education = () => {
                 <EducationCard
                   institution="Cape Peninsula University of Technology (CPUT)"
                   degree="Diploma in ICT Application Development"
-                  period="2022 - 2024"
+                  period="2022 - 2025"
                   description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems. Coursework included web development, programming principles, database design, and cloud computing fundamentals."
-                  achievements={[
-                    "Specialized in web technologies",
-                    "Developed a cloud-based application for my capstone project",
-                    "Received recognition for academic excellence"
-                  ]}
+                  achievements={[]}  
+                ]}
                 />
+
+                <EducationCard
+                  institution="Richfield Graduate Institute of Technology"
+                  degree="Higher Certificate in Information Technology"
+                  period="2021"
+                  description="One-year certificate program providing foundational IT knowledge including computer systems, networking basics, and information systems."
+                  achievements={[]}
+                />
+
+                <EducationCard
+                  institution="Allen Glen High School"
+                  degree="National Senior Certificate"
+                  period="2020"
+                  description="Completed the South African secondary school qualification with a focus on mathematics, physical science, and computer applications."
+                  achievements={[]}
+                />
+                
               </div>
             </div>
             
@@ -49,33 +63,29 @@ const Education = () => {
                 Certifications
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <CertificationCard
-                  name="AWS Certified Cloud Practitioner"
-                  issuer="Amazon Web Services"
-                  date="2023"
-                  description="Foundational certification validating cloud fluency and understanding of AWS Cloud basics, services, and security."
+              <CertificationCard
+                  name="Introduction to Networking and Cloud Computing"
+                  issuer="Coursera"
+                  date="Completed"
+                  description="Introductory course covering the basics of networking principles and cloud infrastructure."
                 />
-                
                 <CertificationCard
-                  name="Microsoft Azure Fundamentals (AZ-900)"
-                  issuer="Microsoft"
-                  date="2023"
-                  description="Certification confirming knowledge of cloud concepts, Azure services, security, privacy, and compliance."
+                  name="Google Cloud Fundamentals: Core Infrastructure"
+                  issuer="Coursera"
+                  date="Completed"
+                  description="Introduction to core Google Cloud services and infrastructure, focusing on scalability, security, and cost efficiency."
                 />
-                
                 <CertificationCard
-                  name="JavaScript Algorithms and Data Structures"
-                  issuer="freeCodeCamp"
-                  date="2022"
-                  description="Certification in advanced JavaScript concepts, algorithms and data structures implementations."
+                  name="Developing Applications with Google Cloud: Foundations"
+                  issuer="Coursera"
+                  date="Completed"
+                  description="Course covering application development using Google Cloud, including GCP SDKs and deployment strategies."
                 />
-                
                 <CertificationCard
-                  name="Full Stack Web Development"
-                  issuer="Udemy"
-                  date="2022"
-                  description="Comprehensive certification covering front-end and back-end web development technologies including React and Node.js."
+                  name="AWS Cloud Technical Essentials"
+                  issuer="Coursera"
+                  date="Completed"
+                  description="Technical overview of AWS core services, architecture, and best practices for cloud adoption."
                 />
               </div>
             </div>
