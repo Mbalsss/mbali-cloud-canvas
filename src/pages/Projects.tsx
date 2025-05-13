@@ -30,14 +30,15 @@ const Projects = () => {
               liveUrl="https://example.com" // Replace with your live demo URL (if any)
              />
             
-            <ProjectCard 
-              title="Real-Time Analytics Dashboard"
-              description="Developed a real-time analytics dashboard for monitoring cloud resources and application performance. Implemented data visualization and alert systems."
-              technologies={["React", "D3.js", "AWS CloudWatch", "Node.js", "WebSockets"]}
-              image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
+            <ProjectCard  
+            title="JobSwiper"
+            description="Built a responsive job matching web app allowing users to swipe through job listings. Developed using PHP for backend logic and HTML, CSS, JavaScript for dynamic frontend interactions."
+            technologies={["PHP", "HTML", "CSS", "JavaScript"]}
+            image="https://images.unsplash.com/photo-1521790360285-74bba3b3c8d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            githubUrl="https://github.com/Mbalsss/JobSwiper"  
+            liveUrl="https://github.com/Mbalsss/JobSwiper"    
             />
+
            
           </div>
         </div>
