@@ -21,14 +21,15 @@ const Projects = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-             <ProjectCard 
+             <ProjectCard  
               title="Capstone Florist Web Application"
-              description="Developed a full-stack florist management system tailored for small businesses."
+              description="Developed a full-stack florist management system tailored for small businesses. The app supports product inventory, customer orders, and admin functionality."
               technologies={["Java", "Angular", "Spring Boot", "MySQL"]}
-              image="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Optional: floral-themed Unsplash image
-              githubUrl="https://github.com/Mbalsss/Nursery-Web-Application-Client-Side" 
-              liveUrl="https://example.com" // Replace with your live demo URL (if any)
-             />
+              image="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              githubUrl="https://github.com/Mbalsss/Nursery-Web-Application-Client-Side"
+              liveUrl="https://example.com" // Replace with actual live demo URL
+              />
+
             
             <ProjectCard  
             title="JobSwiper"
