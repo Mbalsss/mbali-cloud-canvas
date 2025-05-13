@@ -30,26 +30,20 @@ const Experience = () => {
               <ExperienceCard
                 role="Cloud Associate"
                 company="Capaciti"
-                period="2023 - Present"
-                description="Working with cloud technologies to deploy and manage scalable applications. Collaborating with teams to implement cloud-based solutions and optimize performance."
-                skills={["AWS", "Cloud Architecture", "Infrastructure as Code", "CI/CD"]}
+                period=" 2025 - Present"
+                description="focused on modern cloud technologies, DevOps, and cloud-native application design, with hands-on experience through training and team projects."
+                skills={[]}
               />
               
               <ExperienceCard
                 role="Software Development Intern"
-                company="Tech Solutions"
-                period="2022 - 2023"
+                company="Pillar 5 Group"
+                period=" July 2024 - December 2024"
                 description="Assisted in developing full stack applications using modern JavaScript frameworks. Collaborated with senior developers to implement new features and fix bugs."
-                skills={["React", "Node.js", "MongoDB", "Express"]}
+                skills={[]}
               />
               
-              <ExperienceCard
-                role="Junior Web Developer"
-                company="Digital Creations"
-                period="2021 - 2022"
-                description="Created responsive web applications and implemented UI/UX designs. Worked closely with designers to translate concepts into functional websites."
-                skills={["HTML/CSS", "JavaScript", "Responsive Design", "UI/UX Implementation"]}
-              />
+            
             </TabsContent>
             
             <TabsContent value="projects" className="space-y-8">
