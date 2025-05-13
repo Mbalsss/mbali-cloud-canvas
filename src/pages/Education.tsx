@@ -47,7 +47,7 @@ const Education = () => {
                   institution="Allen Glen High School"
                   degree="National Senior Certificate"
                   period="2020"
-                  description="Completed the South African secondary school qualification with a focus on mathematics, physical science, and computer applications."
+                  description="Completed the South African secondary school qualification with a focus on mathematics, accouting , and computer applications technolohy."
                   achievements={[]}
                 />
               </div>
