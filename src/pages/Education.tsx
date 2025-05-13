@@ -1,5 +1,4 @@
-
-import { School, Calendar, Award, BookOpen } from 'lucide-react';
+import { School, Calendar, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
@@ -15,7 +14,7 @@ const Education = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Education Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -26,14 +25,14 @@ const Education = () => {
                 <School size={24} className="text-cloud" />
                 Formal Education
               </h2>
-              
+
               <div className="space-y-6">
                 <EducationCard
                   institution="Cape Peninsula University of Technology (CPUT)"
                   degree="Diploma in ICT Application Development"
                   period="2022 - 2025"
                   description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems. Coursework included web development, programming principles, database design, and cloud computing fundamentals."
-                  achievements={[]}  
+                  achievements={[]}
                 />
 
                 <EducationCard
@@ -51,18 +50,18 @@ const Education = () => {
                   description="Completed the South African secondary school qualification with a focus on mathematics, physical science, and computer applications."
                   achievements={[]}
                 />
-                
               </div>
             </div>
-            
+
             {/* Certifications */}
             <div>
               <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                 <Award size={24} className="text-cloud" />
                 Certifications
               </h2>
-              
-              <CertificationCard
+
+              <div className="space-y-6">
+                <CertificationCard
                   name="Introduction to Networking and Cloud Computing"
                   issuer="Coursera"
                   date="Completed"
@@ -88,6 +87,7 @@ const Education = () => {
                 />
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -95,18 +95,18 @@ const Education = () => {
   );
 };
 
-const EducationCard = ({ 
-  institution, 
-  degree, 
-  period, 
-  description, 
-  achievements 
-}: { 
-  institution: string, 
-  degree: string, 
-  period: string, 
-  description: string, 
-  achievements: string[] 
+const EducationCard = ({
+  institution,
+  degree,
+  period,
+  description,
+  achievements,
+}: {
+  institution: string;
+  degree: string;
+  period: string;
+  description: string;
+  achievements: string[];
 }) => (
   <Card>
     <CardHeader className="bg-gray-50">
@@ -123,7 +123,7 @@ const EducationCard = ({
     </CardHeader>
     <CardContent className="pt-6">
       <p className="text-gray-700 mb-4">{description}</p>
-      
+
       {achievements.length > 0 && (
         <>
           <Separator className="my-4" />
@@ -144,16 +144,16 @@ const EducationCard = ({
   </Card>
 );
 
-const CertificationCard = ({ 
-  name, 
-  issuer, 
-  date, 
-  description 
-}: { 
-  name: string, 
-  issuer: string, 
-  date: string, 
-  description: string 
+const CertificationCard = ({
+  name,
+  issuer,
+  date,
+  description,
+}: {
+  name: string;
+  issuer: string;
+  date: string;
+  description: string;
 }) => (
   <Card className="card-hover">
     <CardContent className="pt-6">
@@ -163,7 +163,9 @@ const CertificationCard = ({
         </div>
         <div>
           <h3 className="font-bold mb-1">{name}</h3>
-          <p className="text-sm text-gray-500 mb-2">{issuer} • {date}</p>
+          <p className="text-sm text-gray-500 mb-2">
+            {issuer} • {date}
+          </p>
           <p className="text-gray-700 text-sm">{description}</p>
         </div>
       </div>
