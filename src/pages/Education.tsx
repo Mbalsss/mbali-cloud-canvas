@@ -34,7 +34,6 @@ const Education = () => {
                   period="2022 - 2025"
                   description="Completed a comprehensive diploma focused on application development, learning various programming languages, software development methodologies, and database management systems. Coursework included web development, programming principles, database design, and cloud computing fundamentals."
                   achievements={[]}  
-                ]}
                 />
 
                 <EducationCard
