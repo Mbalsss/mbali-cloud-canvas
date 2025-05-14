@@ -83,8 +83,6 @@ const Home = () => {
             <SkillBar skill="React" percentage={85} />
             <SkillBar skill="JavaScript" percentage={80} />
             <SkillBar skill="HTML/CSS" percentage={90} />
-            <SkillBar skill="AWS Services" percentage={85} />
-            <SkillBar skill="CI/CD" percentage={70} />
             <SkillBar skill="Node.js" percentage={75} />
             <SkillBar skill="Database Management" percentage={80} />
           </div>
