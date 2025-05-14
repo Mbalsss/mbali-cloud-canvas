@@ -90,11 +90,7 @@ const About = () => {
                   />
                 </div>
 
-                <h2 className="text-2xl font-bold mb-4">Personal Interests</h2>
-                <p className="mb-4 text-lg">
-                  Outside of my professional life, I'm passionate about continuous learning and staying up-to-date with the latest technologies in cloud computing. 
-                  I enjoy participating in tech communities and sharing knowledge with other professionals in the field.
-                </p>
+                
               </div>
             </div>
           </div>
