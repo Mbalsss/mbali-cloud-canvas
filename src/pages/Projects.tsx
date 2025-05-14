@@ -40,6 +40,16 @@ const Projects = () => {
             liveUrl="https://github.com/Mbalsss/JobSwiper"    
             />
 
+            <ProjectCard
+            title="SheetTask"
+            description="Built a no-code task management solution using Google Sheets. Designed to help users track, organize, and prioritize tasks with automated status updates and easy sharing. Leveraged built-in Sheets formulas and conditional formatting for dynamic functionality."
+            technologies={["Google Sheets", "No-Code", "Automation", "Conditional Formatting"]}
+            image="/lovable-uploads/task-sheet-app-preview.png"
+            githubUrl="https://github.com/Mbalsss/SheetTask" // optional if no code repo
+            liveUrl="https://docs.google.com/spreadsheets/d/your-sheet-id-here"
+/>
+
+
            
           </div>
         </div>
