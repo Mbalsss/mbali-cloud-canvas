@@ -2,6 +2,8 @@
 import { Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Download } from 'lucide-react';
 
 const Experience = () => {
   return (
@@ -10,8 +12,17 @@ const Experience = () => {
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-8">
+            My professional journey in cloud computing and software development, showcasing my growth and expertise in these fields.
           </p>
+          <div className="flex justify-center">
+            <Button asChild size="lg" className="gap-2 bg-cloud hover:bg-cloud-dark">
+              <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download="Motlalepula_Mbali_Kgatlhane_CV.pdf">
+                <Download size={16} />
+                Download CV
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
       
@@ -24,7 +35,7 @@ const Experience = () => {
               company="Capaciti"
               period=" Feb 2025 - Present"
               description="Focused on modern cloud technologies, DevOps, and cloud-native application design, with hands-on experience through training and team projects."
-              skills={[]}
+              skills={["Cloud Computing", "React", "JavaScript", "Full Stack", "HTML/CSS"]}
             />
             
             <ExperienceCard
@@ -32,7 +43,7 @@ const Experience = () => {
               company="Pillar 5 Group"
               period=" July 2024 - December 2024"
               description="Assisted in developing full stack applications using modern JavaScript frameworks. Collaborated with senior developers to implement new features and fix bugs."
-              skills={[]}
+              skills={["React", "JavaScript", "HTML/CSS", "Full Stack"]}
             />
           </div>
         </div>

@@ -1,5 +1,4 @@
-
-import { Github, ExternalLink, FolderOpen, Download } from 'lucide-react';
+import { Github, ExternalLink, FolderOpen } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -14,14 +13,6 @@ const Projects = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
             Showcasing my work in cloud computing and full stack development
           </p>
-          <div className="mt-8 flex justify-center">
-            <Button asChild variant="default" size="lg" className="gap-2 bg-cloud hover:bg-cloud-dark">
-              <a href="/path-to-your-cv.pdf" download="Motlalepula_Mbali_Kgatlhane_CV.pdf">
-                <Download size={16} />
-                Download CV
-              </a>
-            </Button>
-          </div>
         </div>
       </section>
       
@@ -43,7 +34,7 @@ const Projects = () => {
             title="JobSwiper"
             description="Built a responsive job matching web app allowing users to swipe through job listings. Developed using PHP for backend logic and HTML, CSS, JavaScript for dynamic frontend interactions."
             technologies={["PHP", "HTML", "CSS", "JavaScript"]}
-            image="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image="https://images.unsplash.com/photo-1484923720570-4bc210954735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             githubUrl="https://github.com/Mbalsss/JobSwiper"  
             liveUrl="https://github.com/Mbalsss/JobSwiper"    
             />

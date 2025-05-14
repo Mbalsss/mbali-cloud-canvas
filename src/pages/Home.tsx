@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Cloud, Code, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -59,7 +58,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ServiceCard 
               icon={<Cloud size={40} className="text-cloud" />}
               title="Cloud Services"
@@ -69,11 +68,6 @@ const Home = () => {
               icon={<Code size={40} className="text-cloud" />}
               title="Full Stack Development"
               description="Creating responsive web applications with modern frameworks and best practices."
-            />
-            <ServiceCard 
-              icon={<Server size={40} className="text-cloud" />}
-              title="DevOps"
-              description="Building CI/CD pipelines and implementing infrastructure as code for efficient deployments."
             />
           </div>
         </div>
