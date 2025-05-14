@@ -1,9 +1,7 @@
-
-import { Calendar } from 'lucide-react';
+import { Calendar, Download } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
 
 const Experience = () => {
   return (
@@ -17,7 +15,7 @@ const Experience = () => {
           </p>
           <div className="flex justify-center">
             <Button asChild size="lg" className="gap-2 bg-cloud hover:bg-cloud-dark">
-              <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download="Motlalepula_Mbali_Kgatlhane_CV.pdf">
+              <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download>
                 <Download size={16} />
                 Download CV
               </a>

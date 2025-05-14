@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,14 +48,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gray-800">Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">Cloud Computing</span>
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">React</span>
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">Full Stack</span>
-              <span className="bg-cloud-light text-cloud-dark px-3 py-1 rounded-full text-sm">HTML/CSS</span>
-            </div>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Download CV</h3>
+            <Button asChild variant="outline" className="gap-2">
+              <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download>
+                <Download size={16} />
+                Download CV
+              </a>
+            </Button>
           </div>
         </div>
         

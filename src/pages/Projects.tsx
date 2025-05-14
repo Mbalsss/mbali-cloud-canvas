@@ -1,3 +1,4 @@
+
 import { Github, ExternalLink, FolderOpen } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -34,7 +35,7 @@ const Projects = () => {
             title="JobSwiper"
             description="Built a responsive job matching web app allowing users to swipe through job listings. Developed using PHP for backend logic and HTML, CSS, JavaScript for dynamic frontend interactions."
             technologies={["PHP", "HTML", "CSS", "JavaScript"]}
-            image="https://images.unsplash.com/photo-1484923720570-4bc210954735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image="/lovable-uploads/af75f9ed-47dd-4ca2-8d01-6bdd9acaf290.png"
             githubUrl="https://github.com/Mbalsss/JobSwiper"  
             liveUrl="https://github.com/Mbalsss/JobSwiper"    
             />
