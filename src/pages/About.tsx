@@ -61,7 +61,7 @@ const About = () => {
                 </h2>
                 <p className="mb-6 text-lg">
                   Hello! I'm Motlalepula Mbali Kgatlhane, a Cloud Associate at Capaciti with a passion for cloud technologies and full stack development. 
-                  I recently graduated from Cape Peninsula University of Technology (CPUT) with a Diploma in ICT Application Development.
+                  I recently graduated from Cape Peninsula University of Technology with a Diploma in ICT Application Development.
                 </p>
                 <p className="mb-8 text-lg">
                   My expertise lies in cloud computing and I have a strong foundation in full stack development. 
