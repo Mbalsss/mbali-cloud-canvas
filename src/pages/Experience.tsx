@@ -1,26 +1,17 @@
-import { Calendar, Download } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 
 const Experience = () => {
   return (
     <div className="pt-8">
       {/* Header */}
-      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+      <section className="bg-gradient-to-r from-blue-500 to-blue-700 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-white">Experience</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto text-center mb-8">
             My professional journey in cloud computing and software development, showcasing my growth and expertise in these fields.
           </p>
-          <div className="flex justify-center">
-            <Button asChild size="lg" className="gap-2 bg-cloud hover:bg-cloud-dark">
-              <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download>
-                <Download size={16} />
-                Download CV
-              </a>
-            </Button>
-          </div>
         </div>
       </section>
       
