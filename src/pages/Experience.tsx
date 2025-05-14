@@ -12,7 +12,7 @@ const Experience = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience & Projects</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
-            My professional journey and notable projects in cloud computing and development
+            My professional journey.
           </p>
         </div>
       </section>
@@ -30,8 +30,8 @@ const Experience = () => {
               <ExperienceCard
                 role="Cloud Associate"
                 company="Capaciti"
-                period=" 2025 - Present"
-                description="focused on modern cloud technologies, DevOps, and cloud-native application design, with hands-on experience through training and team projects."
+                period=" Feb 2025 - Present"
+                description="Focused on modern cloud technologies, DevOps, and cloud-native application design, with hands-on experience through training and team projects."
                 skills={[]}
               />
               
