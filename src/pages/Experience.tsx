@@ -8,8 +8,8 @@ const Experience = () => {
       {/* Header */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-white">Experience</h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
             My professional journey in cloud computing and software development, showcasing my growth and expertise in these fields.
           </p>
         </div>
