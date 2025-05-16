@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { ArrowRight, Cloud, Code, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -27,7 +28,7 @@ const Home = () => {
                 <Button asChild size="lg" className="bg-cloud hover:bg-cloud-dark">
                   <Link to="/about">About Me</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline">
+                <Button asChild size="lg" variant="outline" className="hover:bg-blue-500 hover:text-white hover:border-blue-500">
                   <Link to="/contact">Get in Touch</Link>
                 </Button>
               </div>
@@ -97,7 +98,7 @@ const Home = () => {
             I'm currently available for freelance work and collaboration opportunities.
             Let's build something great together!
           </p>
-          <Button asChild size="lg" variant="secondary" className="font-semibold">
+          <Button asChild size="lg" variant="secondary" className="font-semibold hover:bg-blue-500">
             <Link to="/contact" className="flex items-center gap-2">
               Contact Me <ArrowRight size={18} />
             </Link>

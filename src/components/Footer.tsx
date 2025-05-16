@@ -49,7 +49,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Download CV</h3>
-            <Button asChild variant="outline" className="gap-2">
+            <Button asChild variant="outline" className="gap-2 hover:bg-blue-500 hover:text-white hover:border-blue-500">
               <a href="/Motlalepula_Mbali_Kgatlhane_CV.pdf" download>
                 <Download size={16} />
                 Download CV
