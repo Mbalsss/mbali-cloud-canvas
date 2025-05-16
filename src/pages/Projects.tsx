@@ -20,7 +20,7 @@ const Projects = () => {
       {/* Projects Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
              <ProjectCard  
               title="Capstone Florist Web Application"
               description="Developed a full-stack florist management system tailored for small businesses. The app supports product inventory, customer orders, and admin functionality."
@@ -40,9 +40,14 @@ const Projects = () => {
             liveUrl="https://github.com/Mbalsss/JobSwiper"    
             />
 
-           
-
-
+            <ProjectCard  
+            title="Smart Collaborators"
+            description="Created a no-code task management application using Google App Sheets that helps teams collaborate effectively. The app includes task assignment, progress tracking, and deadline management features."
+            technologies={["Google App Sheets", "No-Code", "Workflow Automation"]}
+            image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            githubUrl="#"  
+            liveUrl="#"    
+            />
            
           </div>
         </div>
@@ -84,13 +89,15 @@ const ProjectCard = ({ title, description, technologies, image, githubUrl, liveU
       </div>
     </CardContent>
     <CardFooter className="px-6 pb-6 pt-0 gap-3">
-      <Button asChild variant="outline" size="sm" className="gap-2">
-        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <Github size={16} />
-          Code
-        </a>
-      </Button>
-      {liveUrl && (
+      {githubUrl !== "#" && (
+        <Button asChild variant="outline" size="sm" className="gap-2">
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <Github size={16} />
+            Code
+          </a>
+        </Button>
+      )}
+      {liveUrl && liveUrl !== "#" && (
         <Button asChild size="sm" className="gap-2 bg-cloud hover:bg-cloud-dark">
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={16} />
