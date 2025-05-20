@@ -23,16 +23,16 @@ const Experience = () => {
               role="Cloud Associate"
               company="Capaciti"
               period=" Feb 2025 - Present"
-              description="Focused on modern cloud technologies, DevOps, and cloud-native application design, with hands-on experience through training and team projects."
-              skills={["Cloud Computing", "React", "JavaScript", "Full Stack", "HTML/CSS"]}
+              description="Focused on modern cloud technologies, Microsoft Azure, and cloud-native application design, with hands-on experience through training and team projects."
+              skills={["Cloud Computing"]}
             />
             
             <ExperienceCard
-              role="Software Development Intern"
+              role="Software Developer Intern"
               company="Pillar 5 Group"
               period=" July 2024 - December 2024"
-              description="Assisted in developing full stack applications using modern JavaScript frameworks. Collaborated with senior developers to implement new features and fix bugs."
-              skills={["React", "JavaScript", "HTML/CSS", "Full Stack"]}
+              description="Assisted in developing full stack applications using modern JavaScript frameworks. Collaborated with senior developer to implement new features and fix bugs."
+              skills={["React", "JavaScript", "Springboot", "Java", "HTML/CSS", "MySQL"]}
             />
           </div>
         </div>
