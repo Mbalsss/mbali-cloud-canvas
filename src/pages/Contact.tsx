@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github } from 'lucide-react';
 
 interface ContactFormData {
   name: string;
@@ -93,9 +93,7 @@ const Contact = () => {
                   </SocialLink>
 
                   <SocialLink href="https://github.com/Mbalsss" label="GitHub">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577..."></path>
-                    </svg>
+                    <Github size={20} />
                   </SocialLink>
                 </div>
               </div>
