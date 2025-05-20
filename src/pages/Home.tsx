@@ -1,8 +1,9 @@
 
 import { Link } from 'react-router-dom';
-import { ArrowRight, Cloud, Code, Server } from 'lucide-react';
+import { ArrowRight, Cloud, CloudCog, CloudDownload, CloudUpload, Code, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 const Home = () => {
   return (
@@ -74,18 +75,48 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Skills Section - Redesigned with cloud focus */}
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">My Skills</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 text-center">
+            A combination of cloud expertise and development skills
+          </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <SkillItem skill="Cloud Computing" />
-            <SkillItem skill="React" />
-            <SkillItem skill="JavaScript" />
-            <SkillItem skill="HTML/CSS" />
-            <SkillItem skill="Node.js" />
-            <SkillItem skill="Database Management" />
+          {/* Cloud Skills */}
+          <div className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <CloudCog size={28} className="text-cloud-dark" />
+              <h3 className="text-2xl font-bold text-gray-800">Cloud Computing</h3>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <CloudSkillBadge icon={<CloudUpload size={16} />} name="AWS EC2" />
+              <CloudSkillBadge icon={<CloudDownload size={16} />} name="S3 Storage" />
+              <CloudSkillBadge icon={<CloudCog size={16} />} name="Lambda Functions" />
+              <CloudSkillBadge icon={<Cloud size={16} />} name="AWS CloudFormation" />
+              <CloudSkillBadge icon={<CloudCog size={16} />} name="IAM & Security" />
+              <CloudSkillBadge icon={<Cloud size={16} />} name="Azure Services" />
+              <CloudSkillBadge icon={<CloudDownload size={16} />} name="Load Balancing" />
+              <CloudSkillBadge icon={<CloudUpload size={16} />} name="Auto Scaling" />
+            </div>
+          </div>
+          
+          {/* Development Skills */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <Code size={28} className="text-cloud-dark" />
+              <h3 className="text-2xl font-bold text-gray-800">Development</h3>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <DevSkillCard skill="JavaScript" color="bg-yellow-500" />
+              <DevSkillCard skill="React" color="bg-blue-400" />
+              <DevSkillCard skill="Node.js" color="bg-green-600" />
+              <DevSkillCard skill="HTML/CSS" color="bg-orange-500" />
+              <DevSkillCard skill="TypeScript" color="bg-blue-600" />
+              <DevSkillCard skill="Python" color="bg-yellow-600" />
+              <DevSkillCard skill="Git" color="bg-red-500" />
+              <DevSkillCard skill="Database Management" color="bg-purple-500" />
+            </div>
           </div>
         </div>
       </section>
@@ -119,9 +150,17 @@ const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, titl
   </Card>
 );
 
-const SkillItem = ({ skill }: { skill: string }) => (
-  <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-    <span className="font-medium text-gray-800">{skill}</span>
+const CloudSkillBadge = ({ icon, name }: { icon: React.ReactNode, name: string }) => (
+  <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-2px] group">
+    <div className="text-cloud-dark group-hover:text-cloud-dark">{icon}</div>
+    <span className="font-medium text-gray-800">{name}</span>
+  </div>
+);
+
+const DevSkillCard = ({ skill, color }: { skill: string, color: string }) => (
+  <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-2px] group overflow-hidden relative">
+    <div className={`absolute left-0 top-0 w-1 h-full ${color}`}></div>
+    <span className="font-medium text-gray-800 pl-2">{skill}</span>
   </div>
 );
 
