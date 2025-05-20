@@ -75,47 +75,87 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Skills Section - Redesigned with cloud focus */}
-      <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
+      {/* Skills Section - Redesigned */}
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">My Skills</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 text-center">
-            A combination of cloud expertise and development skills
-          </p>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">My Technical Skills</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Specialized expertise in cloud technologies and development tools
+            </p>
+          </div>
           
           {/* Cloud Skills */}
-          <div className="mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <CloudCog size={28} className="text-cloud-dark" />
+          <div className="mb-16">
+            <div className="flex flex-col items-center mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+                <CloudCog size={32} className="text-cloud-dark" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-800">Cloud Computing</h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <CloudSkillBadge icon={<CloudUpload size={16} />} name="AWS EC2" />
-              <CloudSkillBadge icon={<CloudDownload size={16} />} name="S3 Storage" />
-              <CloudSkillBadge icon={<CloudCog size={16} />} name="Lambda Functions" />
-              <CloudSkillBadge icon={<Cloud size={16} />} name="AWS CloudFormation" />
-              <CloudSkillBadge icon={<CloudCog size={16} />} name="IAM & Security" />
-              <CloudSkillBadge icon={<Cloud size={16} />} name="Azure Services" />
-              <CloudSkillBadge icon={<CloudDownload size={16} />} name="Load Balancing" />
-              <CloudSkillBadge icon={<CloudUpload size={16} />} name="Auto Scaling" />
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <CloudSkillCard 
+                icon={<CloudUpload />} 
+                name="AWS EC2" 
+                description="Virtual server management in Amazon's cloud" 
+              />
+              <CloudSkillCard 
+                icon={<CloudDownload />} 
+                name="AWS S3" 
+                description="Scalable cloud storage solutions" 
+              />
+              <CloudSkillCard 
+                icon={<CloudCog />} 
+                name="Lambda" 
+                description="Serverless compute service" 
+              />
+              <CloudSkillCard 
+                icon={<Cloud />} 
+                name="CloudFormation" 
+                description="Infrastructure as code" 
+              />
+              <CloudSkillCard 
+                icon={<CloudCog />} 
+                name="IAM & Security" 
+                description="Identity and access management" 
+              />
+              <CloudSkillCard 
+                icon={<Cloud />} 
+                name="Azure Services" 
+                description="Microsoft cloud solutions" 
+              />
+              <CloudSkillCard 
+                icon={<CloudDownload />} 
+                name="Load Balancing" 
+                description="Traffic distribution across servers" 
+              />
+              <CloudSkillCard 
+                icon={<CloudUpload />} 
+                name="Auto Scaling" 
+                description="Dynamic resource management" 
+              />
             </div>
           </div>
           
           {/* Development Skills */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <Code size={28} className="text-cloud-dark" />
+            <div className="flex flex-col items-center mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+                <Code size={32} className="text-cloud-dark" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-800">Development</h3>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              <DevSkillCard skill="JavaScript" color="bg-yellow-500" />
-              <DevSkillCard skill="React" color="bg-blue-400" />
-              <DevSkillCard skill="Node.js" color="bg-green-600" />
-              <DevSkillCard skill="HTML/CSS" color="bg-orange-500" />
-              <DevSkillCard skill="TypeScript" color="bg-blue-600" />
-              <DevSkillCard skill="Python" color="bg-yellow-600" />
-              <DevSkillCard skill="Git" color="bg-red-500" />
-              <DevSkillCard skill="Database Management" color="bg-purple-500" />
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              <DevSkillPill skill="JavaScript" color="from-yellow-400 to-yellow-500" icon="⚡" />
+              <DevSkillPill skill="React" color="from-blue-400 to-blue-500" icon="⚛️" />
+              <DevSkillPill skill="Node.js" color="from-green-500 to-green-600" icon="🚀" />
+              <DevSkillPill skill="HTML/CSS" color="from-orange-400 to-orange-500" icon="🎨" />
+              <DevSkillPill skill="TypeScript" color="from-blue-500 to-blue-600" icon="🔷" />
+              <DevSkillPill skill="Python" color="from-yellow-500 to-yellow-600" icon="🐍" />
+              <DevSkillPill skill="Git" color="from-red-400 to-red-500" icon="🔄" />
+              <DevSkillPill skill="Database Management" color="from-purple-400 to-purple-500" icon="🗃️" />
             </div>
           </div>
         </div>
@@ -150,17 +190,22 @@ const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, titl
   </Card>
 );
 
-const CloudSkillBadge = ({ icon, name }: { icon: React.ReactNode, name: string }) => (
-  <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-2px] group">
-    <div className="text-cloud-dark group-hover:text-cloud-dark">{icon}</div>
-    <span className="font-medium text-gray-800">{name}</span>
+const CloudSkillCard = ({ icon, name, description }: { icon: React.ReactNode, name: string, description: string }) => (
+  <div className="group">
+    <div className="bg-white rounded-lg p-6 shadow-sm h-full transition-all duration-300 group-hover:shadow-md group-hover:translate-y-[-4px] border border-gray-100 flex flex-col items-center text-center">
+      <div className="mb-3 p-3 rounded-full bg-blue-50 text-cloud-dark">{icon}</div>
+      <h4 className="font-semibold text-lg mb-1">{name}</h4>
+      <p className="text-gray-600 text-sm">{description}</p>
+    </div>
   </div>
 );
 
-const DevSkillCard = ({ skill, color }: { skill: string, color: string }) => (
-  <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-2px] group overflow-hidden relative">
-    <div className={`absolute left-0 top-0 w-1 h-full ${color}`}></div>
-    <span className="font-medium text-gray-800 pl-2">{skill}</span>
+const DevSkillPill = ({ skill, color, icon }: { skill: string, color: string, icon: string }) => (
+  <div className="group">
+    <div className={`bg-gradient-to-r ${color} rounded-full px-4 py-2 text-white shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2`}>
+      <span className="text-lg">{icon}</span>
+      <span className="font-medium">{skill}</span>
+    </div>
   </div>
 );
 
