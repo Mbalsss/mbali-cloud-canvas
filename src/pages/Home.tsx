@@ -79,13 +79,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My Skills</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <SkillBar skill="Cloud Computing" percentage={90} />
-            <SkillBar skill="React" percentage={85} />
-            <SkillBar skill="JavaScript" percentage={80} />
-            <SkillBar skill="HTML/CSS" percentage={90} />
-            <SkillBar skill="Node.js" percentage={75} />
-            <SkillBar skill="Database Management" percentage={80} />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <SkillItem skill="Cloud Computing" />
+            <SkillItem skill="React" />
+            <SkillItem skill="JavaScript" />
+            <SkillItem skill="HTML/CSS" />
+            <SkillItem skill="Node.js" />
+            <SkillItem skill="Database Management" />
           </div>
         </div>
       </section>
@@ -119,18 +119,9 @@ const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, titl
   </Card>
 );
 
-const SkillBar = ({ skill, percentage }: { skill: string, percentage: number }) => (
-  <div className="mb-4">
-    <div className="flex justify-between mb-1">
-      <span className="font-medium">{skill}</span>
-      <span>{percentage}%</span>
-    </div>
-    <div className="w-full bg-gray-200 rounded-full h-2">
-      <div 
-        className="bg-cloud rounded-full h-2 transition-all duration-1000" 
-        style={{ width: `${percentage}%` }}
-      ></div>
-    </div>
+const SkillItem = ({ skill }: { skill: string }) => (
+  <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+    <span className="font-medium text-gray-800">{skill}</span>
   </div>
 );
 
