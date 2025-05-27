@@ -83,7 +83,7 @@ const Education = () => {
                   description="Introductory course covering the basics of networking principles and cloud infrastructure."
                   isOpen={openCertificate === "network-cloud"}
                   toggle={() => toggleCertificate("network-cloud")}
-                  certificateUrl="/certificates/networking-cloud-cert.pdf"
+                  certificateUrl="/Introduction to Networking and Cloud Computing.pdf"
                 />
                 <CertificationCard
                   id="gcp-core"
@@ -93,7 +93,7 @@ const Education = () => {
                   description="Introduction to core Google Cloud services and infrastructure, focusing on scalability, security, and cost efficiency."
                   isOpen={openCertificate === "gcp-core"}
                   toggle={() => toggleCertificate("gcp-core")}
-                  certificateUrl="/certificates/gcp-core-cert.pdf"
+                  certificateUrl="/Google Cloud Fundamentals Core Infrastructure.pdf"
                 />
                 <CertificationCard
                   id="gcp-apps"
@@ -103,7 +103,7 @@ const Education = () => {
                   description="Course covering application development using Google Cloud, including GCP SDKs and deployment strategies."
                   isOpen={openCertificate === "gcp-apps"}
                   toggle={() => toggleCertificate("gcp-apps")}
-                  certificateUrl="/certificates/gcp-apps-cert.pdf"
+                  certificateUrl="/Developing Applications with Google Cloud Foundations.pdf"
                 />
                 <CertificationCard
                   id="aws-tech"
@@ -113,7 +113,7 @@ const Education = () => {
                   description="Technical overview of AWS core services, architecture, and best practices for cloud adoption."
                   isOpen={openCertificate === "aws-tech"}
                   toggle={() => toggleCertificate("aws-tech")}
-                  certificateUrl="/certificates/aws-tech-cert.pdf"
+                  certificateUrl="/AWS Cloud Technical Essentials.pdf"
                 />
               </div>
             </div>
