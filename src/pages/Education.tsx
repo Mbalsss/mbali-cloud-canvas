@@ -83,7 +83,7 @@ const Education = () => {
                   description="Introductory course covering the basics of networking principles and cloud infrastructure."
                   isOpen={openCertificate === "network-cloud"}
                   toggle={() => toggleCertificate("network-cloud")}
-                  certificateUrl="#" // Add your certificate URL here
+                  certificateUrl="/certificates/networking-cloud-cert.pdf"
                 />
                 <CertificationCard
                   id="gcp-core"
@@ -93,7 +93,7 @@ const Education = () => {
                   description="Introduction to core Google Cloud services and infrastructure, focusing on scalability, security, and cost efficiency."
                   isOpen={openCertificate === "gcp-core"}
                   toggle={() => toggleCertificate("gcp-core")}
-                  certificateUrl="#" // Add your certificate URL here
+                  certificateUrl="/certificates/gcp-core-cert.pdf"
                 />
                 <CertificationCard
                   id="gcp-apps"
@@ -103,7 +103,7 @@ const Education = () => {
                   description="Course covering application development using Google Cloud, including GCP SDKs and deployment strategies."
                   isOpen={openCertificate === "gcp-apps"}
                   toggle={() => toggleCertificate("gcp-apps")}
-                  certificateUrl="#" // Add your certificate URL here
+                  certificateUrl="/certificates/gcp-apps-cert.pdf"
                 />
                 <CertificationCard
                   id="aws-tech"
@@ -113,7 +113,7 @@ const Education = () => {
                   description="Technical overview of AWS core services, architecture, and best practices for cloud adoption."
                   isOpen={openCertificate === "aws-tech"}
                   toggle={() => toggleCertificate("aws-tech")}
-                  certificateUrl="#" // Add your certificate URL here
+                  certificateUrl="/certificates/aws-tech-cert.pdf"
                 />
               </div>
             </div>
